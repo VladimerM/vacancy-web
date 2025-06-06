@@ -15,6 +15,7 @@
     <!-- Your homepage content here -->
     <h1>Find Your Dream Job Today!</h1>
     <!-- Add your hero section, search form, etc. -->
+     <h1>Barev Ladimer</h1>
   </main>
 
   <?php include 'components/footer.php'; ?>
