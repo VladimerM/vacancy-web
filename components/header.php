@@ -1,9 +1,9 @@
 <?php
 $navItems = [
-    'Home' => 'index.php',
-    'Jobs' => 'jobs.php',
-    'About Us' => 'about.php',
-    'Contact Us' => 'contact.php'
+    'Home' => '/job-portal/index.php',
+    'Jobs' => '/job-portal/pages/jobs.php',
+    'About Us' => '/job-portal/pages/about.php',
+    'Contact Us' => '/job-portal/pages/contact.php'
 ];
 
 $currentPage = basename($_SERVER['PHP_SELF']);
@@ -11,8 +11,8 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
 <header class="header">
     <div class="header__container">
-        <a href="index.php" class="header__logo">
-            <img src="assets/images/icons/logo.png" alt="Job Portal Logo" class="header__logo-icon">
+        <a href="/job-portal/index.php" class="header__logo">
+            <img src="/job-portal/assets/images/icons/logo.png" alt="Job Portal Logo" class="header__logo-icon">
             Job Portal
         </a>
 
