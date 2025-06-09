@@ -12,7 +12,7 @@
   <?php include 'components/header.php'; ?> 
 
   <main>
-     <div class="main-container">
+      <div class="main-container">
         <section class="hero-block">
             <!-- Hero Section -->
             <div class="hero">
@@ -181,6 +181,10 @@
             </div> -->
         </div>
     </section>
+    <!-- Your homepage content here -->
+    <h1>Find Your Dream Job Today!</h1>
+    <!-- Add your hero section, search form, etc. -->
+     <h1>Barev Ladimer</h1>
   </main>
 
   <?php include 'components/footer.php'; ?>
