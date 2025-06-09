@@ -971,7 +971,7 @@ body {
 
 .home-page .main-container {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/home.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./assets/images/icons/home.png);
   text-align: center;
   background-position: center;
   background-size: cover;
