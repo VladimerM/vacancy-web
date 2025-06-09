@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body>
+<body class="jobs-page">
   <?php include '../components/header.php'; ?>
    <header class="jobs-header">
         <h1 class="jobs-header_title">Jobs</h1>
