@@ -753,12 +753,6 @@ body {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .jobs-page body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -976,14 +970,6 @@ body {
 }
 
 .home-page {
-  /* Hero */
-  /* Search */
-  /* Stats */
-  /* companies  */
-  /* about-company */
-  /* About Company Stats */
-}
-.home-page body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
   color: #333;
@@ -999,22 +985,22 @@ body {
   width: 100%;
   padding: 0 20px;
 }
-.home-page .hero {
-  padding: 100px 0 40px;
-  color: #fff;
-}
 .home-page .hero-block {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 50px;
 }
-.home-page .hero__title {
+.home-page .hero-block .hero {
+  padding: 100px 0 40px;
+  color: #fff;
+}
+.home-page .hero-block .hero .hero__title {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.home-page .hero__subtitle {
+.home-page .hero-block .hero .hero__subtitle {
   font-size: 20px;
   max-width: 905px;
   margin: 0 auto;
@@ -1023,23 +1009,21 @@ body {
   width: 100%;
   padding: 20px 0;
 }
-.home-page .search__container {
+.home-page .search .search__container {
   background-color: #fff;
   border-radius: 30px;
   max-width: 900px;
   margin: 0 auto;
   padding: 15px 30px;
-  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  */
 }
-.home-page .search__form {
+.home-page .search .search__container .search__form {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
   width: 100%;
 }
-.home-page .search__form-group {
+.home-page .search .search__container .search__form .search__form-group {
   display: flex;
   flex-grow: 1;
   gap: 15px;
@@ -1047,7 +1031,7 @@ body {
   width: 100%;
   justify-content: space-between;
 }
-.home-page .search__input {
+.home-page .search .search__container .search__form .search__form-group .search__input {
   padding: 12px 20px;
   font-size: 16px;
   border: 1px solid #e0e0e0;
@@ -1055,7 +1039,7 @@ body {
   background-color: #fff;
   cursor: pointer;
 }
-.home-page .search__button {
+.home-page .search .search__container .search__form .search__form-group .search__button {
   padding: 12px 25px;
   font-size: 16px;
   background-color: #309689;
@@ -1070,7 +1054,7 @@ body {
   transition: background-color 0.3s ease;
   flex-shrink: 0;
 }
-.home-page .search__button img {
+.home-page .search .search__container .search__form .search__form-group .search__button img {
   width: 18px;
   height: 18px;
 }
@@ -1078,20 +1062,20 @@ body {
   padding: 40px 0;
   color: #fff;
 }
-.home-page .stats__container {
+.home-page .stats .stats__container {
   display: flex;
   justify-content: center;
   gap: 50px;
   text-align: center;
   flex-wrap: wrap;
 }
-.home-page .stats__item {
+.home-page .stats .stats__container .stats__item {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 15px;
 }
-.home-page .stats__icon {
+.home-page .stats .stats__container .stats__item .stats__icon {
   border-radius: 50%;
   background-color: #309689;
   width: 50px;
@@ -1100,22 +1084,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-.home-page .stats__icon img {
+.home-page .stats .stats__container .stats__item .stats__icon img {
   width: 30px;
   height: 30px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.home-page .stats__content {
+.home-page .stats .stats__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.home-page .stats__number {
+.home-page .stats .stats__content .stats__number {
   font-size: 24px;
   font-weight: bold;
 }
-.home-page .stats__label {
+.home-page .stats .stats__content .stats__label {
   font-size: 16px;
   color: #666;
 }
@@ -1124,12 +1108,12 @@ body {
   background-color: #000;
   padding: 30px 0;
 }
-.home-page .companies__container {
+.home-page .companies .companies__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-.home-page .companies__logos {
+.home-page .companies .companies__container .companies__logos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1137,14 +1121,14 @@ body {
   gap: 20px;
   flex-wrap: wrap;
 }
-.home-page .companies__logo {
+.home-page .companies .companies__container .companies__logos .companies__logo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
   min-width: 100px;
 }
-.home-page .companies__logo img {
+.home-page .companies .companies__container .companies__logos .companies__logo img {
   max-width: 120px;
   height: auto;
   opacity: 0.7;
@@ -1155,14 +1139,14 @@ body {
   padding: 80px 20px;
   width: 100%;
 }
-.home-page .about-company__container {
+.home-page .about-company .about-company__container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-.home-page .about-company__content {
+.home-page .about-company .about-company__content {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -1170,7 +1154,7 @@ body {
   justify-content: center;
   text-align: left;
 }
-.home-page .about-company__image-wrapper {
+.home-page .about-company .about-company__image-wrapper {
   flex-shrink: 0;
   width: 450px;
   height: 350px;
@@ -1181,18 +1165,18 @@ body {
   align-items: center;
   max-width: 100%;
 }
-.home-page .about-company__image {
+.home-page .about-company .about-company__image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home-page .about-company__text-wrapper {
+.home-page .about-company .about-company__text-wrapper {
   flex-grow: 1;
   max-width: 500px;
   text-align: left;
 }
-.home-page .about-company__title {
+.home-page .about-company .about-company__title {
   font-size: 42px;
   font-weight: bold;
   color: #333;
@@ -1202,18 +1186,52 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-.home-page .about-company__title-line {
+.home-page .about-company .about-company__title-line {
   white-space: nowrap;
 }
-.home-page .about-company__description {
+.home-page .about-company .about-company__description {
   font-size: 16px;
   color: #666;
   margin-bottom: 30px;
 }
-.home-page .about-company__actions {
+.home-page .about-company .about-company__actions {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+}
+.home-page .about-company .about-company__stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #eee;
+}
+.home-page .about-company .about-company__stats-item {
+  flex-basis: 280px;
+  flex-grow: 1;
+  text-align: left;
+  padding: 15px;
+}
+.home-page .about-company .about-company__stats-number {
+  font-size: 38px;
+  font-weight: bold;
+  color: #309689;
+  margin-bottom: 10px;
+  display: block;
+}
+.home-page .about-company .about-company__stats-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+.home-page .about-company .about-company__stats-text {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.5;
 }
 .home-page .button {
   padding: 12px 25px;
@@ -1237,40 +1255,6 @@ body {
 }
 .home-page .button--text:hover {
   text-decoration: none;
-}
-.home-page .about-company__stats {
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  padding-top: 40px;
-  border-top: 1px solid #eee;
-}
-.home-page .about-company__stats-item {
-  flex-basis: 280px;
-  flex-grow: 1;
-  text-align: left;
-  padding: 15px;
-}
-.home-page .about-company__stats-number {
-  font-size: 38px;
-  font-weight: bold;
-  color: #309689;
-  margin-bottom: 10px;
-  display: block;
-}
-.home-page .about-company__stats-label {
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
-  display: block;
-}
-.home-page .about-company__stats-text {
-  font-size: 15px;
-  color: #777;
-  line-height: 1.5;
 }
 .home-page .better-future {
   position: relative;
