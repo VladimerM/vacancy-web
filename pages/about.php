@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body>
+<body class="about-page">
   <?php include '../components/header.php'; ?>
 
   <!-- Hero Section -->
