@@ -17,8 +17,7 @@
         <!-- Hero Section -->
         <div class="hero">
           <h1 class="hero__title">Find Your Dream Job Today!</h1>
-          <p class="hero__subtitle">Connecting Talent with Opportunity: Your Gateway to Career Success
-          </p>
+          <p class="hero__subtitle">Connecting Talent with Opportunity: Your Gateway to Career Success</p>
         </div>
 
         <!-- Search Section -->
@@ -26,11 +25,7 @@
           <div class="search__container">
             <form class="search__form">
               <div class="search__form-group">
-                <select class="search__input">
-                  <option>Job Title or Company</option>
-                  <option>Software Engineer</option>
-                  <option>Marketing Manager</option>
-                </select>
+                <input type="text" class="search__input" placeholder="Job Title or Company">
                 <select class="search__input">
                   <option>Select Location</option>
                   <option>London</option>
@@ -42,7 +37,7 @@
                   <option>Finance</option>
                 </select>
                 <button type="submit" class="search__button">
-                  <img src="./assets/images/icons/search.png" alt=""> Search Jobs
+                  <img src="./assets/images/icons/search.png" alt=""> Search Job
                 </button>
               </div>
             </form>
@@ -84,10 +79,8 @@
           </div>
         </div>
       </section>
-
-
-
     </div>
+
     <!-- Companies Section -->
     <section class="companies">
       <div class="companies__container">
@@ -110,30 +103,22 @@
         </div>
       </div>
     </section>
+
     <!-- About-Company -->
     <section class="about-company">
       <div class="about-company__container">
         <div class="about-company__content">
           <div class="about-company__image-wrapper">
             <img class="about-company__image" src="./assets/images/second.png" alt="">
-
           </div>
           <div class="about-company__text-wrapper">
             <h2 class="about-company__title">
-              <span class="about-company__title-line">Good Life Begins With </span>
-              <span class="about-company__title-line about-company__title-line--break">A Good
-                Company</span>
+              <span class="about-company__title-line">Good Life Begins With</span>
+              <span class="about-company__title-line about-company__title-line--break">A Good Company</span>
             </h2>
             <p class="about-company__description">Ultricies purus dolor viverra mi laoreet at cursus justo.
-              Ultricies purus diam egestas amet faucibus tempor blandit. Elit velit mauris aliquam est
-              diam.
-              Leo sagittis consectetur diam morbi erat aenean. Vulputate praesent congue faucibus in
-              euismod
-              feugiat euismod volutpat. Adipiscing risus amet phasellus imperdiet eget vel pulvinar. Risus
-              in
-              felis
-              faucibus sit.
-              Scelerisque consequat iaculis mauris amet vel felis id tincidunt nunc.
+              Ultricies purus diam egestas amet faucibus tempor blandit. Elit velit mauris aliquam est diam.
+              Leo sagittis consectetur diam morbi erat aenean.
             </p>
 
             <div class="about-company__actions">
@@ -142,29 +127,30 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="about-company__stats">
-        <div class="about-company__stats-item">
-          <span class="about-company__stats-number">12k+</span>
-          <span class="about-company__stats-label">Clients worldwide</span>
-          <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
-            Risus risus lectus augue justo lacus viverra sit. </p>
-        </div>
-        <div class="about-company__stats-item">
-          <span class="about-company__stats-number">20k+</span>
-          <span class="about-company__stats-label">Active resume</span>
-          <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
-            Risus risus lectus augue justo lacus viverra sit. </p>
-        </div>
-        <div class="about-company__stats-item">
-          <span class="about-company__stats-number">18k+</span>
-          <span class="about-company__stats-label">Compnies</span>
-          <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
-            Risus risus lectus augue justo lacus viverra sit. </p>
-        </div>
-      </div>
 
+        <div class="about-company__stats">
+          <div class="about-company__stats-item">
+            <span class="about-company__stats-number">12k+</span>
+            <span class="about-company__stats-label">Clients worldwide</span>
+            <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
+              Risus risus lectus augue justo lacus viverra sit.</p>
+          </div>
+          <div class="about-company__stats-item">
+            <span class="about-company__stats-number">20k+</span>
+            <span class="about-company__stats-label">Active resume</span>
+            <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
+              Risus risus lectus augue justo lacus viverra sit.</p>
+          </div>
+          <div class="about-company__stats-item">
+            <span class="about-company__stats-number">18k+</span>
+            <span class="about-company__stats-label">Companies</span>
+            <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
+              Risus risus lectus augue justo lacus viverra sit.</p>
+          </div>
+        </div>
+      </div>
     </section>
+
     <section class="better-future">
       <div class="better-future__container">
         <div class="better-future__content">
@@ -172,10 +158,8 @@
             <span class="better-future__title-line">Create A Better</span>
             <span class="better-future__title-line">Future For Yourself</span>
           </h2>
-          <p class="better-future__description"> At eu lobortis pretium tincidunt amet lacus ut aenean
-            aliquet.
-            Blandit a massa elementum id scelerisque rhoncus...
-          </p>
+          <p class="better-future__description">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
+            Blandit a massa elementum id scelerisque rhoncus...</p>
           <button class="button button--primary">Search Job</button>
         </div>
       </div>
