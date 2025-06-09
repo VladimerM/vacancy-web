@@ -18,12 +18,12 @@
         <div class="job-card">
             <div class="job-card-header">
                 <span class="time-ago">10 min ago</span>
-                <img src="svg/Icon.png" alt="Bookmark icon" class="bookmark-icon">
+                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
             </div>
 
             <div class="job-info">
                 <div class="company-logo">
-                    <img src="svg/security.png" alt="Company Logo">
+                    <img src="./assets/images/icons/security.png" alt="Company Logo">
                 </div>
                 <div>
                     <h2>Forward Security Director</h2>
@@ -33,19 +33,19 @@
 
             <div class="job-details-icons">
                 <div class="detail-item">
-                    <img src="svg/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
+                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
                     <span>Hotels & Tourism</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/clock.png" alt="Full time icon" class="detail-icon">
+                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
                     <span>Full time</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/wallet.png" alt="Salary icon" class="detail-icon">
+                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
                     <span>$40000-$42000</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/location.png" alt="Location icon" class="detail-icon">
+                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
                     <span>New-York, USA</span>
                 </div>
             </div>
@@ -54,12 +54,12 @@
         <div class="job-card">
             <div class="job-card-header">
                 <span class="time-ago">12 min ago</span>
-                <img src="svg/Icon.png" alt="Bookmark icon" class="bookmark-icon">
+                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
             </div>
 
             <div class="job-info">
                 <div class="company-logo">
-                    <img src="svg/regional.png" alt="Company Logo">
+                    <img src="./assets/images/icons/regional.png" alt="Company Logo">
                 </div>
                 <div>
                     <h2>Regional Creative Facilitator</h2>
@@ -69,19 +69,19 @@
 
             <div class="job-details-icons">
                 <div class="detail-item">
-                    <img src="svg/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
+                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
                     <span>Media</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/clock.png" alt="Full time icon" class="detail-icon">
+                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
                     <span>Part time</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/wallet.png" alt="Salary icon" class="detail-icon">
+                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
                     <span>$28000-$32000</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/location.png" alt="Location icon" class="detail-icon">
+                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
                     <span>Los- Angeles, USA</span>
                 </div>
             </div>
@@ -90,12 +90,12 @@
         <div class="job-card">
             <div class="job-card-header">
                 <span class="time-ago">15 min ago</span>
-                <img src="svg/Icon.png" alt="Bookmark icon" class="bookmark-icon">
+                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
             </div>
 
             <div class="job-info">
                 <div class="company-logo">
-                    <img src="svg/internal.png" alt="Company Logo">
+                    <img src="./assets/images/icons/internal.png" alt="Company Logo">
                 </div>
                 <div>
                     <h2>Internal Integration Planner</h2>
@@ -105,19 +105,19 @@
 
             <div class="job-details-icons">
                 <div class="detail-item">
-                    <img src="svg/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
+                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
                     <span>Construction</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/clock.png" alt="Full time icon" class="detail-icon">
+                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
                     <span>Full time</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/wallet.png" alt="Salary icon" class="detail-icon">
+                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
                     <span>$48000-$50000</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/location.png" alt="Location icon" class="detail-icon">
+                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
                     <span>Texas, USA</span>
                 </div>
             </div>
@@ -126,12 +126,12 @@
         <div class="job-card">
             <div class="job-card-header">
                 <span class="time-ago">24 min ago</span>
-                <img src="svg/Icon.png" alt="Bookmark icon" class="bookmark-icon">
+                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
             </div>
 
             <div class="job-info">
                 <div class="company-logo">
-                    <img src="svg/district.png" alt="Company Logo">
+                    <img src="./assets/images/icons/district.png" alt="Company Logo">
                 </div>
                 <div>
                     <h2>District Intranet Director</h2>
@@ -141,19 +141,19 @@
 
             <div class="job-details-icons">
                 <div class="detail-item">
-                    <img src="svg/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
+                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
                     <span>Commerce</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/clock.png" alt="Full time icon" class="detail-icon">
+                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
                     <span>Full time</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/wallet.png" alt="Salary icon" class="detail-icon">
+                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
                     <span>$42000-$48000</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/location.png" alt="Location icon" class="detail-icon">
+                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
                     <span>Florida, USA</span>
                 </div>
             </div>
@@ -162,12 +162,12 @@
         <div class="job-card">
             <div class="job-card-header">
                 <span class="time-ago">26 min ago</span>
-                <img src="svg/Icon.png" alt="Bookmark icon" class="bookmark-icon">
+                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
             </div>
 
             <div class="job-info">
                 <div class="company-logo">
-                    <img src="svg/corporate.png" alt="Company Logo">
+                    <img src="./assets/images/icons/corporate.png" alt="Company Logo">
                 </div>
                 <div>
                     <h2>Corporate Tactics Facilitator</h2>
@@ -177,19 +177,19 @@
 
             <div class="job-details-icons">
                 <div class="detail-item">
-                    <img src="svg/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
+                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
                     <span>Commerce</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/clock.png" alt="Full time icon" class="detail-icon">
+                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
                     <span>Full time</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/wallet.png" alt="Salary icon" class="detail-icon">
+                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
                     <span>$38000-$40000</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/location.png" alt="Location icon" class="detail-icon">
+                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
                     <span>Boston, USA</span>
                 </div>
             </div>
@@ -198,12 +198,12 @@
         <div class="job-card">
             <div class="job-card-header">
                 <span class="time-ago">30 min ago</span>
-                <img src="svg/Icon.png" alt="Bookmark icon" class="bookmark-icon">
+                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
             </div>
 
             <div class="job-info">
                 <div class="company-logo">
-                    <img src="svg/forward.png" alt="Company Logo">
+                    <img src="./assets/images/icons/forward.png" alt="Company Logo">
                 </div>
                 <div>
                     <h2>Forward Accounts Consultant</h2>
@@ -213,19 +213,19 @@
 
             <div class="job-details-icons">
                 <div class="detail-item">
-                    <img src="svg/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
+                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
                     <span>Financial services</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/clock.png" alt="Full time icon" class="detail-icon">
+                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
                     <span>Full time</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/wallet.png" alt="Salary icon" class="detail-icon">
+                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
                     <span>$45000-$48000</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/location.png" alt="Location icon" class="detail-icon">
+                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
                     <span>Boston, USA</span>
                 </div>
             </div>
@@ -245,7 +245,7 @@
                 <div class="top-company_companies">
                     <div class="company-card">
                         <div class="company-icon">
-                            <img src="svg/insta.png" alt="Instagram logo">
+                            <img src="./assets/images/icons/insta.png" alt="Instagram logo">
                         </div>
                         <h2 class="company-name">Instagram</h2>
                         <p class="company-description">At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet
@@ -255,7 +255,7 @@
 
                     <div class="company-card">
                         <div class="company-icon">
-                            <img src="svg/tesla.png" alt="Tesla logo">
+                            <img src="./assets/images/icons/tesla.png" alt="Tesla logo">
                         </div>
                         <h2 class="company-name">Tesla</h2>
                         <p class="company-description">Odio aliquet tellus tellus maecenas. Faucibus in viverra
@@ -265,7 +265,7 @@
 
                     <div class="company-card">
                         <div class="company-icon">
-                            <img src="svg/mc.png" alt="McDonald's logo">
+                            <img src="./assets/images/icons/mc.png" alt="McDonald's logo">
                         </div>
                         <h2 class="company-name">McDonald's</h2>
                         <p class="company-description">Odio aliquet tellus tellus maecenas. Faucibus in viverra
@@ -275,7 +275,7 @@
 
                     <div class="company-card">
                         <div class="company-icon">
-                            <img src="svg/iphone.png" alt="Apple logo">
+                            <img src="./assets/images/icons/iphone.png" alt="Apple logo">
                         </div>
                         <h2 class="company-name">Apple</h2>
                         <p class="company-description">Et odio sem tellus ultrices posuere consequat. Tristique nascetur
