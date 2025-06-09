@@ -429,38 +429,37 @@ body {
   }
 }
 
-.container {
+.about-page .container {
   max-width: 1336px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
-.hero {
+.about-page .hero {
   padding: 80px 0;
   background-color: #f8f9fa;
 }
-.hero__content {
+.about-page .hero__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
-.hero__text {
+.about-page .hero__text {
   padding-right: 20px;
 }
-.hero__title {
+.about-page .hero__title {
   font-size: 2.5rem;
   font-weight: 700;
   color: #2c3e50;
   margin-bottom: 24px;
   line-height: 1.2;
 }
-.hero__description {
+.about-page .hero__description {
   font-size: 1.1rem;
   color: #5a6c7d;
   line-height: 1.6;
 }
-.hero__image {
+.about-page .hero__image {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -470,104 +469,102 @@ body {
   align-items: center;
   justify-content: center;
 }
-.hero__image-placeholder {
+.about-page .hero__image-placeholder {
   color: white;
   font-size: 1.2rem;
   text-align: center;
   opacity: 0.8;
 }
 @media (max-width: 768px) {
-  .hero {
+  .about-page .hero {
     padding: 50px 0;
   }
-  .hero__content {
+  .about-page .hero__content {
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
   }
-  .hero__text {
+  .about-page .hero__text {
     padding-right: 0;
     order: 2;
   }
-  .hero__image {
+  .about-page .hero__image {
     order: 1;
     min-height: 250px;
   }
-  .hero__title {
+  .about-page .hero__title {
     font-size: 2rem;
     margin-bottom: 20px;
   }
-  .hero__description {
+  .about-page .hero__description {
     font-size: 1rem;
   }
 }
 @media (max-width: 480px) {
-  .hero__title {
+  .about-page .hero__title {
     font-size: 1.75rem;
   }
 }
-
-.how-it-works {
+.about-page .how-it-works {
   padding: 80px 0;
   background-color: white;
 }
-.how-it-works__header {
+.about-page .how-it-works__header {
   text-align: center;
   margin-bottom: 60px;
 }
-.how-it-works__title {
+.about-page .how-it-works__title {
   font-size: 2.5rem;
   font-weight: 700;
   color: #2c3e50;
   margin-bottom: 16px;
 }
-.how-it-works__subtitle {
+.about-page .how-it-works__subtitle {
   font-size: 1.1rem;
   color: #5a6c7d;
   max-width: 600px;
   margin: 0 auto;
 }
-.how-it-works__steps {
+.about-page .how-it-works__steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
 @media (max-width: 768px) {
-  .how-it-works {
+  .about-page .how-it-works {
     padding: 50px 0;
   }
-  .how-it-works__header {
+  .about-page .how-it-works__header {
     margin-bottom: 40px;
   }
-  .how-it-works__title {
+  .about-page .how-it-works__title {
     font-size: 2rem;
   }
-  .how-it-works__subtitle {
+  .about-page .how-it-works__subtitle {
     font-size: 1rem;
   }
-  .how-it-works__steps {
+  .about-page .how-it-works__steps {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 }
 @media (max-width: 480px) {
-  .how-it-works__title {
+  .about-page .how-it-works__title {
     font-size: 1.75rem;
   }
 }
-
-.step {
+.about-page .step {
   text-align: center;
   padding: 30px 20px;
   background-color: #f8f9fa;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.step:hover {
+.about-page .step:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-.step__icon {
+.about-page .step__icon {
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -576,58 +573,57 @@ body {
   justify-content: center;
   margin: 0 auto 20px;
 }
-.step__icon svg {
+.about-page .step__icon svg {
   width: 32px;
   height: 32px;
   fill: white;
 }
-.step__title {
+.about-page .step__title {
   font-size: 1.3rem;
   font-weight: 600;
   color: #2c3e50;
   margin-bottom: 12px;
 }
-.step__description {
+.about-page .step__description {
   font-size: 0.95rem;
   color: #5a6c7d;
   line-height: 1.5;
 }
 @media (max-width: 768px) {
-  .step {
+  .about-page .step {
     padding: 24px 16px;
   }
-  .step__title {
+  .about-page .step__title {
     font-size: 1.2rem;
   }
-  .step__description {
+  .about-page .step__description {
     font-size: 0.9rem;
   }
 }
-
-.faq {
+.about-page .faq {
   padding: 80px 0;
   background-color: #f8f9fa;
 }
-.faq__header {
+.about-page .faq__header {
   text-align: center;
   margin-bottom: 60px;
 }
-.faq__title {
+.about-page .faq__title {
   font-size: 2.5rem;
   font-weight: 700;
   color: #2c3e50;
   margin-bottom: 16px;
 }
-.faq__subtitle {
+.about-page .faq__subtitle {
   font-size: 1.1rem;
   color: #5a6c7d;
   max-width: 600px;
   margin: 0 auto;
 }
-.faq__list {
+.about-page .faq__list {
   margin: 0 auto;
 }
-.faq__item {
+.about-page .faq__item {
   background-color: white;
   border-radius: 12px;
   margin-bottom: 16px;
@@ -635,21 +631,21 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease;
 }
-.faq__item--active {
+.about-page .faq__item--active {
   background-color: #ebf5f4;
 }
-.faq__item--active .faq__toggle {
+.about-page .faq__item--active .faq__toggle {
   background-color: #4a9b8e;
   transform: rotate(45deg);
 }
-.faq__item--active .faq__toggle svg {
+.about-page .faq__item--active .faq__toggle svg {
   fill: white;
   transform: rotate(45deg);
 }
-.faq__item:hover {
+.about-page .faq__item:hover {
   background-color: #f8f9fa;
 }
-.faq__question {
+.about-page .faq__question {
   width: 100%;
   padding: 24px 30px;
   background: none;
@@ -663,27 +659,27 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.faq__question-header {
+.about-page .faq__question-header {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
 }
-.faq__question-content {
+.about-page .faq__question-content {
   display: flex;
   align-items: center;
   flex: 1;
 }
-.faq__question-number {
+.about-page .faq__question-number {
   font-size: 1.2rem;
   color: #4a9b8e;
   margin-right: 16px;
   font-weight: 700;
 }
-.faq__question-text {
+.about-page .faq__question-text {
   flex: 1;
 }
-.faq__toggle {
+.about-page .faq__toggle {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -693,70 +689,70 @@ body {
   justify-content: center;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.faq__toggle svg {
+.about-page .faq__toggle svg {
   width: 16px;
   height: 16px;
   fill: #4a9b8e;
   transition: transform 0.3s ease;
 }
-.faq__answer {
+.about-page .faq__answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
 }
-.faq__answer--active {
+.about-page .faq__answer--active {
   max-height: 200px;
   padding: 0 30px 24px;
 }
-.faq__answer-text {
+.about-page .faq__answer-text {
   color: #5a6c7d;
   font-size: 0.95rem;
   line-height: 1.6;
 }
 @media (max-width: 768px) {
-  .faq {
+  .about-page .faq {
     padding: 50px 0;
   }
-  .faq__header {
+  .about-page .faq__header {
     margin-bottom: 40px;
   }
-  .faq__title {
+  .about-page .faq__title {
     font-size: 2rem;
   }
-  .faq__subtitle {
+  .about-page .faq__subtitle {
     font-size: 1rem;
   }
-  .faq__question {
+  .about-page .faq__question {
     padding: 20px;
     font-size: 1rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
   }
-  .faq__answer--active {
+  .about-page .faq__answer--active {
     padding: 0 20px 20px;
   }
-  .faq__answer-text {
+  .about-page .faq__answer-text {
     font-size: 0.9rem;
   }
 }
 @media (max-width: 480px) {
-  .faq__title {
+  .about-page .faq__title {
     font-size: 1.75rem;
   }
-  .faq__question {
+  .about-page .faq__question {
     padding: 16px;
   }
-  .faq__answer--active {
+  .about-page .faq__answer--active {
     padding: 0 16px 16px;
   }
 }
-
 @media (max-width: 768px) {
-  .container {
+  .about-page .container {
     padding: 0 16px;
   }
 }
+
 h1 {
   color: red;
 }/*# sourceMappingURL=style.css.map */
