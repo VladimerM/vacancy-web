@@ -3,8 +3,8 @@
     <div class="footer__content">
       <!-- Brand Section -->
       <div class="footer__brand">
-        <a href="/job-portal/index.php" class="footer__logo">
-          <img src="/job-portal/assets/images/icons/logo.png" alt="Job Portal Logo" class="footer__logo-icon">
+        <a href="/vacancy-web/index.php" class="footer__logo">
+          <img src="/vacancy-web/assets/images/icons/logo.png" alt="Job Portal Logo" class="footer__logo-icon">
           <span class="footer__logo-text">Job</span>
         </a>
         <p class="footer__description">
