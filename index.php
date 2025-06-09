@@ -42,7 +42,7 @@
                   <option>Finance</option>
                 </select>
                 <button type="submit" class="search__button">
-                  <img src="images/icons/search.png" alt=""> Search Jobs
+                  <img src="./assets/images/icons/search.png" alt=""> Search Jobs
                 </button>
               </div>
             </form>
@@ -54,7 +54,7 @@
           <div class="stats__container">
             <div class="stats__item">
               <div class="stats__icon">
-                <img src="images/icons/case.png" alt="">
+                <img src="./assets/images/icons/case.png" alt="">
               </div>
               <div class="stats__content">
                 <span class="stats__number">25,850</span>
@@ -64,7 +64,7 @@
 
             <div class="stats__item">
               <div class="stats__icon">
-                <img src="images/icons/group.png" alt="">
+                <img src="./assets/images/icons/group.png" alt="">
               </div>
               <div class="stats__content">
                 <span class="stats__number">10,250</span>
@@ -74,7 +74,7 @@
 
             <div class="stats__item">
               <div class="stats__icon">
-                <img src="images/icons/building .png" alt="">
+                <img src="./assets/images/icons/building.png" alt="">
               </div>
               <div class="stats__content">
                 <span class="stats__number">18,400</span>
@@ -93,19 +93,19 @@
       <div class="companies__container">
         <div class="companies__logos">
           <div class="companies__logo">
-            <img src="images/icons/spotify.png" alt="Spotify">
+            <img src="./assets/images/icons/spotify.png" alt="Spotify">
           </div>
           <div class="companies__logo">
-            <img src="images/icons/slack.png" alt="Slack">
+            <img src="./assets/images/icons/slack.png" alt="Slack">
           </div>
           <div class="companies__logo">
-            <img src="images/icons/adobe.png" alt="Adobe">
+            <img src="./assets/images/icons/adobe.png" alt="Adobe">
           </div>
           <div class="companies__logo">
-            <img src="images/icons/asana.png" alt="Asana">
+            <img src="./assets/images/icons/asana.png" alt="Asana">
           </div>
           <div class="companies__logo">
-            <img src="images/icons/linear.png" alt="Linear">
+            <img src="./assets/images/icons/linear.png" alt="Linear">
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@
       <div class="about-company__container">
         <div class="about-company__content">
           <div class="about-company__image-wrapper">
-            <img class="about-company__image" src="images/second.png" alt="">
+            <img class="about-company__image" src="./assets/images/second.png" alt="">
 
           </div>
           <div class="about-company__text-wrapper">

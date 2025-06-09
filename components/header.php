@@ -21,7 +21,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <?php foreach ($navItems as $name => $url): ?>
                     <li class="header__nav-item">
                         <a href="<?php echo $url; ?>"
-                            class="header__nav-link <?php echo ($currentPage === $url) ? 'header__nav-link--active' : ''; ?>">
+                            class="header__nav-link <?php echo ($currentPage === basename($url)) ? 'header__nav-link--active' : ''; ?>">
                             <?php echo $name; ?>
                         </a>
                     </li>
