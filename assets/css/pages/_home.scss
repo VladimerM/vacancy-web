@@ -1,16 +1,17 @@
 .home-page {
   .main-container {
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
       url("../../assets/images/home.png");
     text-align: center;
     background-position: center;
     background-size: cover;
     width: 100%;
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @media (max-width: 768px) {
-      padding: 0 15px;
       min-height: auto;
     }
   }
@@ -23,7 +24,8 @@
 
     @media (max-width: 768px) {
       gap: 30px;
-      padding: 20px 0 40px;
+      padding-top: 20px;
+      padding-bottom: 40px;
     }
 
     .hero {
@@ -86,7 +88,6 @@
       @media (max-width: 768px) {
         border-radius: 20px;
         padding: 20px;
-        margin: 0 10px;
       }
 
       .search__form {
@@ -195,6 +196,7 @@
         flex-direction: row;
         align-items: center;
         gap: 15px;
+        width: 150px;
 
         @media (max-width: 768px) {
           gap: 12px;
@@ -263,14 +265,6 @@
     }
 
     .companies__container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-
-      @media (max-width: 768px) {
-        padding: 0 15px;
-      }
-
       .companies__logos {
         display: flex;
         flex-direction: row;
@@ -316,17 +310,14 @@
   }
 
   .about-company {
-    background-color: #f8f8f8;
-    padding: 80px 20px;
+    padding: 80px 0;
     width: 100%;
 
     @media (max-width: 768px) {
-      padding: 50px 15px;
+      padding: 50px 0;
     }
 
     .about-company__container {
-      max-width: 1200px;
-      margin: 0 auto;
       display: flex;
       flex-direction: column;
       gap: 60px;
@@ -342,6 +333,7 @@
       gap: 80px;
       justify-content: space-between;
       text-align: left;
+      flex-wrap: wrap;
 
       @media (max-width: 768px) {
         flex-direction: column;
@@ -550,25 +542,26 @@
   }
 
   .better-future {
+    min-height: 350px;
+    margin: 40px 0;
+    padding: 80px 65px;
     position: relative;
-    background-color: #000;
-    padding: 80px 20px;
-    color: #fff;
     overflow: hidden;
     border-radius: 12px;
-    margin: 40px auto;
-    max-width: 1200px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 350px;
+    background-color: #000;
+    color: #fff;
+    background-image: url("../../assets/images/better-future-bg.png");
+    background-position: right;
+    background-repeat: no-repeat;
 
     @media (max-width: 768px) {
       margin: 20px 15px;
       padding: 50px 20px;
       min-height: 280px;
       border-radius: 8px;
+      background-size: cover;
+      background-position: center;
     }
 
     @media (max-width: 480px) {
@@ -578,40 +571,25 @@
     }
   }
 
-  .better-future::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("img/Imgs.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1;
+  // .better-future::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: url("../../assets/images/better-future-bg.png");
+  //   background-position: right;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   z-index: 1;
 
-    @media (max-width: 768px) {
-      background-position: center;
-      background-size: cover;
-      opacity: 0.3;
-    }
-  }
-
-  .better-future__container {
-    position: relative;
-    z-index: 2;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    @media (max-width: 768px) {
-      justify-content: center;
-    }
-  }
+  //   @media (max-width: 768px) {
+  //     background-position: center;
+  //     background-size: cover;
+  //     opacity: 0.3;
+  //   }
+  // }
 
   .better-future__content {
     max-width: 500px;

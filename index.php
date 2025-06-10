@@ -13,7 +13,7 @@
 
   <main>
     <div class="main-container">
-      <section class="hero-block">
+      <section class="hero-block container">
         <!-- Hero Section -->
         <div class="hero">
           <h1 class="hero__title">Find Your Dream Job Today!</h1>
@@ -79,10 +79,8 @@
           </div>
         </div>
       </section>
-    </div>
 
-    <!-- Companies Section -->
-    <section class="companies">
+      <section class="companies">
       <div class="companies__container">
         <div class="companies__logos">
           <div class="companies__logo">
@@ -103,56 +101,60 @@
         </div>
       </div>
     </section>
+    </div>
+
+    <!-- Companies Section -->
+    
 
     <!-- About-Company -->
-    <section class="about-company">
-      <div class="about-company__container">
-        <div class="about-company__content">
-          <div class="about-company__image-wrapper">
-            <img class="about-company__image" src="./assets/images/second.png" alt="">
-          </div>
-          <div class="about-company__text-wrapper">
-            <h2 class="about-company__title">
-              <span class="about-company__title-line">Good Life Begins With</span>
-              <span class="about-company__title-line about-company__title-line--break">A Good Company</span>
-            </h2>
-            <p class="about-company__description">Ultricies purus dolor viverra mi laoreet at cursus justo.
-              Ultricies purus diam egestas amet faucibus tempor blandit. Elit velit mauris aliquam est diam.
-              Leo sagittis consectetur diam morbi erat aenean.
-            </p>
+    <div class="container">
+      <section class="about-company">
+        <div class="about-company__container">
+          <div class="about-company__content">
+            <div class="about-company__image-wrapper">
+              <img class="about-company__image" src="./assets/images/second.png" alt="">
+            </div>
+            <div class="about-company__text-wrapper">
+              <h2 class="about-company__title">
+                <span class="about-company__title-line">Good Life Begins With</span>
+                <span class="about-company__title-line about-company__title-line--break">A Good Company</span>
+              </h2>
+              <p class="about-company__description">Ultricies purus dolor viverra mi laoreet at cursus justo.
+                Ultricies purus diam egestas amet faucibus tempor blandit. Elit velit mauris aliquam est diam.
+                Leo sagittis consectetur diam morbi erat aenean.
+              </p>
 
-            <div class="about-company__actions">
-              <button class="button button--primary">Search Job</button>
-              <a href="#" class="button button--text">Learn more</a>
+              <div class="about-company__actions">
+                <button class="button button--primary">Search Job</button>
+                <a href="#" class="button button--text">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-company__stats">
+            <div class="about-company__stats-item">
+              <span class="about-company__stats-number">12k+</span>
+              <span class="about-company__stats-label">Clients worldwide</span>
+              <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
+                Risus risus lectus augue justo lacus viverra sit.</p>
+            </div>
+            <div class="about-company__stats-item">
+              <span class="about-company__stats-number">20k+</span>
+              <span class="about-company__stats-label">Active resume</span>
+              <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
+                Risus risus lectus augue justo lacus viverra sit.</p>
+            </div>
+            <div class="about-company__stats-item">
+              <span class="about-company__stats-number">18k+</span>
+              <span class="about-company__stats-label">Companies</span>
+              <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
+                Risus risus lectus augue justo lacus viverra sit.</p>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="about-company__stats">
-          <div class="about-company__stats-item">
-            <span class="about-company__stats-number">12k+</span>
-            <span class="about-company__stats-label">Clients worldwide</span>
-            <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
-              Risus risus lectus augue justo lacus viverra sit.</p>
-          </div>
-          <div class="about-company__stats-item">
-            <span class="about-company__stats-number">20k+</span>
-            <span class="about-company__stats-label">Active resume</span>
-            <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
-              Risus risus lectus augue justo lacus viverra sit.</p>
-          </div>
-          <div class="about-company__stats-item">
-            <span class="about-company__stats-number">18k+</span>
-            <span class="about-company__stats-label">Companies</span>
-            <p class="about-company__stats-text">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
-              Risus risus lectus augue justo lacus viverra sit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="better-future">
-      <div class="better-future__container">
+      <section class="better-future">
         <div class="better-future__content">
           <h2 class="better-future__title">
             <span class="better-future__title-line">Create A Better</span>
@@ -162,8 +164,9 @@
             Blandit a massa elementum id scelerisque rhoncus...</p>
           <button class="button button--primary">Search Job</button>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
   </main>
 
   <?php include 'components/footer.php'; ?>

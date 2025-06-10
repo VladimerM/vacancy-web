@@ -8,59 +8,61 @@ $navItems = [
 
 $currentPage = basename($_SERVER['PHP_SELF']);
 ?>
+<div class="header-wrap-container">
+    <header class="header">
+        <div class="header__container">
+            <a href="/vacancy-web/index.php" class="header__logo">
+                <img src="/vacancy-web/assets/images/icons/logo.png" alt="Job Portal Logo" class="header__logo-icon">
+                Job Portal
+            </a>
 
-<header class="header">
-    <div class="header__container">
-        <a href="/vacancy-web/index.php" class="header__logo">
-            <img src="/vacancy-web/assets/images/icons/logo.png" alt="Job Portal Logo" class="header__logo-icon">
-            Job Portal
-        </a>
+            <nav class="header__nav">
+                <ul>
+                    <?php foreach ($navItems as $name => $url): ?>
+                        <li class="header__nav-item">
+                            <a href="<?php echo $url; ?>"
+                                class="header__nav-link <?php echo ($currentPage === basename($url)) ? 'header__nav-link--active' : ''; ?>">
+                                <?php echo $name; ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </nav>
 
-        <nav class="header__nav">
-            <ul>
-                <?php foreach ($navItems as $name => $url): ?>
-                    <li class="header__nav-item">
-                        <a href="<?php echo $url; ?>"
-                            class="header__nav-link <?php echo ($currentPage === basename($url)) ? 'header__nav-link--active' : ''; ?>">
-                            <?php echo $name; ?>
-                        </a>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </nav>
+            <div class="header__actions">
+                <a href="login.php" class="header__login">Login</a>
+                <a href="register.php" class="header__register">Register</a>
+            </div>
 
-        <div class="header__actions">
-            <a href="login.php" class="header__login">Login</a>
-            <a href="register.php" class="header__register">Register</a>
+            <div class="header__burger">
+                <div class="header__burger-line"></div>
+                <div class="header__burger-line"></div>
+                <div class="header__burger-line"></div>
+            </div>
         </div>
 
-        <div class="header__burger">
-            <div class="header__burger-line"></div>
-            <div class="header__burger-line"></div>
-            <div class="header__burger-line"></div>
-        </div>
-    </div>
+        <div class="header__mobile-menu" id="mobileMenu">
+            <nav class="header__mobile-nav">
+                <ul>
+                    <?php foreach ($navItems as $name => $url): ?>
+                        <li class="header__mobile-nav-item">
+                            <a href="<?php echo $url; ?>"
+                                class="header__mobile-nav-link <?php echo ($currentPage === $url) ? 'header__mobile-nav-link--active' : ''; ?>">
+                                <?php echo $name; ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </nav>
 
-    <div class="header__mobile-menu" id="mobileMenu">
-        <nav class="header__mobile-nav">
-            <ul>
-                <?php foreach ($navItems as $name => $url): ?>
-                    <li class="header__mobile-nav-item">
-                        <a href="<?php echo $url; ?>"
-                            class="header__mobile-nav-link <?php echo ($currentPage === $url) ? 'header__mobile-nav-link--active' : ''; ?>">
-                            <?php echo $name; ?>
-                        </a>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </nav>
-
-        <div class="header__mobile-actions">
-            <a href="login.php" class="header__mobile-login">Login</a>
-            <a href="register.php" class="header__mobile-register">Register</a>
+            <div class="header__mobile-actions">
+                <a href="login.php" class="header__mobile-login">Login</a>
+                <a href="register.php" class="header__mobile-register">Register</a>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>

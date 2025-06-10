@@ -2,292 +2,324 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Web App</title>
-  <link rel="stylesheet" href="../assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs - Your Web App</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body class="jobs-page">
-  <?php include '../components/header.php'; ?>
-   <header class="jobs-header">
-        <h1 class="jobs-header_title">Jobs</h1>
+    <?php include '../components/header.php'; ?>
+
+    <header class="jobs-header">
+        <div class="container">
+            <h1 class="jobs-header__title">Jobs</h1>
+        </div>
     </header>
 
-    <main class="jobs-container">
-        <div class="job-card">
-            <div class="job-card-header">
-                <span class="time-ago">10 min ago</span>
-                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
+    <main class="container">
+        <div class="jobs-container">
+            <div class="job-card">
+                <div class="job-card__header">
+                    <span class="job-card__time">10 min ago</span>
+                    <img src="../assets/images/icons/Icon.png" alt="Bookmark icon" class="job-card__bookmark">
+                </div>
+
+                <div class="job-card__info">
+                    <div class="job-card__logo">
+                        <img src="../assets/images/icons/security.png" alt="Company Logo">
+                    </div>
+                    <div class="job-card__details">
+                        <h2 class="job-card__title">Forward Security Director</h2>
+                        <p class="job-card__company">Bauch, Schuppe and Schulist Co</p>
+                    </div>
+                </div>
+                <div class="job-card__footer">
+                    <div class="job-card__tags">
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/briefcase.png" alt="Category icon"
+                                class="job-card__tag-icon">
+                            <span>Hotels & Tourism</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/clock.png" alt="Time icon" class="job-card__tag-icon">
+                            <span>Full time</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/wallet.png" alt="Salary icon" class="job-card__tag-icon">
+                            <span>$40000-$42000</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/location.png" alt="Location icon"
+                                class="job-card__tag-icon">
+                            <span>New-York, USA</span>
+                        </div>
+                    </div>
+                    <button class="job-card__button">Job Details</button>
+                </div>
             </div>
 
-            <div class="job-info">
-                <div class="company-logo">
-                    <img src="./assets/images/icons/security.png" alt="Company Logo">
+            <div class="job-card">
+                <div class="job-card__header">
+                    <span class="job-card__time">12 min ago</span>
+                    <img src="../assets/images/icons/Icon.png" alt="Bookmark icon" class="job-card__bookmark">
                 </div>
-                <div>
-                    <h2>Forward Security Director</h2>
-                    <p class="company-name">Bauch, Schuppe and Schulist Co</p>
+
+                <div class="job-card__info">
+                    <div class="job-card__logo">
+                        <img src="../assets/images/icons/regional.png" alt="Company Logo">
+                    </div>
+                    <div class="job-card__details">
+                        <h2 class="job-card__title">Regional Creative Facilitator</h2>
+                        <p class="job-card__company">Wisozk - Becker Co</p>
+                    </div>
+                </div>
+
+                <div class="job-card__footer">
+                    <div class="job-card__tags">
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/briefcase.png" alt="Category icon"
+                                class="job-card__tag-icon">
+                            <span>Hotels & Tourism</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/clock.png" alt="Time icon" class="job-card__tag-icon">
+                            <span>Full time</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/wallet.png" alt="Salary icon" class="job-card__tag-icon">
+                            <span>$40000-$42000</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/location.png" alt="Location icon"
+                                class="job-card__tag-icon">
+                            <span>New-York, USA</span>
+                        </div>
+                    </div>
+                    <button class="job-card__button">Job Details</button>
                 </div>
             </div>
 
-            <div class="job-details-icons">
-                <div class="detail-item">
-                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
-                    <span>Hotels & Tourism</span>
+            <div class="job-card">
+                <div class="job-card__header">
+                    <span class="job-card__time">15 min ago</span>
+                    <img src="../assets/images/icons/Icon.png" alt="Bookmark icon" class="job-card__bookmark">
                 </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
-                    <span>Full time</span>
+
+                <div class="job-card__info">
+                    <div class="job-card__logo">
+                        <img src="../assets/images/icons/internal.png" alt="Company Logo">
+                    </div>
+                    <div class="job-card__details">
+                        <h2 class="job-card__title">Internal Integration Planner</h2>
+                        <p class="job-card__company">Mraz, Quigley and Feest Inc.</p>
+                    </div>
                 </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
-                    <span>$40000-$42000</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
-                    <span>New-York, USA</span>
+
+                <div class="job-card__footer">
+                    <div class="job-card__tags">
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/briefcase.png" alt="Category icon"
+                                class="job-card__tag-icon">
+                            <span>Hotels & Tourism</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/clock.png" alt="Time icon" class="job-card__tag-icon">
+                            <span>Full time</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/wallet.png" alt="Salary icon" class="job-card__tag-icon">
+                            <span>$40000-$42000</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/location.png" alt="Location icon"
+                                class="job-card__tag-icon">
+                            <span>New-York, USA</span>
+                        </div>
+                    </div>
+                    <button class="job-card__button">Job Details</button>
                 </div>
             </div>
-            <button class="job-details-button">Job Details</button>
+
+            <div class="job-card">
+                <div class="job-card__header">
+                    <span class="job-card__time">24 min ago</span>
+                    <img src="../assets/images/icons/Icon.png" alt="Bookmark icon" class="job-card__bookmark">
+                </div>
+
+                <div class="job-card__info">
+                    <div class="job-card__logo">
+                        <img src="../assets/images/icons/district.png" alt="Company Logo">
+                    </div>
+                    <div class="job-card__details">
+                        <h2 class="job-card__title">District Intranet Director</h2>
+                        <p class="job-card__company">VonRueden - Weber Co</p>
+                    </div>
+                </div>
+
+                <div class="job-card__footer">
+                    <div class="job-card__tags">
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/briefcase.png" alt="Category icon"
+                                class="job-card__tag-icon">
+                            <span>Hotels & Tourism</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/clock.png" alt="Time icon" class="job-card__tag-icon">
+                            <span>Full time</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/wallet.png" alt="Salary icon" class="job-card__tag-icon">
+                            <span>$40000-$42000</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/location.png" alt="Location icon"
+                                class="job-card__tag-icon">
+                            <span>New-York, USA</span>
+                        </div>
+                    </div>
+                    <button class="job-card__button">Job Details</button>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-card__header">
+                    <span class="job-card__time">26 min ago</span>
+                    <img src="../assets/images/icons/Icon.png" alt="Bookmark icon" class="job-card__bookmark">
+                </div>
+
+                <div class="job-card__info">
+                    <div class="job-card__logo">
+                        <img src="../assets/images/icons/corporate.png" alt="Company Logo">
+                    </div>
+                    <div class="job-card__details">
+                        <h2 class="job-card__title">Corporate Tactics Facilitator</h2>
+                        <p class="job-card__company">Cormier, Turner and Flatley Inc</p>
+                    </div>
+                </div>
+
+                <div class="job-card__footer">
+                    <div class="job-card__tags">
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/briefcase.png" alt="Category icon"
+                                class="job-card__tag-icon">
+                            <span>Hotels & Tourism</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/clock.png" alt="Time icon" class="job-card__tag-icon">
+                            <span>Full time</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/wallet.png" alt="Salary icon" class="job-card__tag-icon">
+                            <span>$40000-$42000</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/location.png" alt="Location icon"
+                                class="job-card__tag-icon">
+                            <span>New-York, USA</span>
+                        </div>
+                    </div>
+                    <button class="job-card__button">Job Details</button>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-card__header">
+                    <span class="job-card__time">30 min ago</span>
+                    <img src="../assets/images/icons/Icon.png" alt="Bookmark icon" class="job-card__bookmark">
+                </div>
+
+                <div class="job-card__info">
+                    <div class="job-card__logo">
+                        <img src="../assets/images/icons/forward.png" alt="Company Logo">
+                    </div>
+                    <div class="job-card__details">
+                        <h2 class="job-card__title">Forward Accounts Consultant</h2>
+                        <p class="job-card__company">Miller Group</p>
+                    </div>
+                </div>
+
+                <div class="job-card__footer">
+                    <div class="job-card__tags">
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/briefcase.png" alt="Category icon"
+                                class="job-card__tag-icon">
+                            <span>Hotels & Tourism</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/clock.png" alt="Time icon" class="job-card__tag-icon">
+                            <span>Full time</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/wallet.png" alt="Salary icon" class="job-card__tag-icon">
+                            <span>$40000-$42000</span>
+                        </div>
+                        <div class="job-card__tag">
+                            <img src="../assets/images/icons/location.png" alt="Location icon"
+                                class="job-card__tag-icon">
+                            <span>New-York, USA</span>
+                        </div>
+                    </div>
+                    <button class="job-card__button">Job Details</button>
+                </div>
+            </div>
         </div>
-        <div class="job-card">
-            <div class="job-card-header">
-                <span class="time-ago">12 min ago</span>
-                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
-            </div>
-
-            <div class="job-info">
-                <div class="company-logo">
-                    <img src="./assets/images/icons/regional.png" alt="Company Logo">
-                </div>
-                <div>
-                    <h2>Regional Creative Facilitator</h2>
-                    <p class="company-name">Wisozk - Becker Co</p>
-                </div>
-            </div>
-
-            <div class="job-details-icons">
-                <div class="detail-item">
-                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
-                    <span>Media</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
-                    <span>Part time</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
-                    <span>$28000-$32000</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
-                    <span>Los- Angeles, USA</span>
-                </div>
-            </div>
-            <button class="job-details-button">Job Details</button>
-        </div>
-        <div class="job-card">
-            <div class="job-card-header">
-                <span class="time-ago">15 min ago</span>
-                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
-            </div>
-
-            <div class="job-info">
-                <div class="company-logo">
-                    <img src="./assets/images/icons/internal.png" alt="Company Logo">
-                </div>
-                <div>
-                    <h2>Internal Integration Planner</h2>
-                    <p class="company-name">Mraz, Quigley and Feest Inc.</p>
-                </div>
-            </div>
-
-            <div class="job-details-icons">
-                <div class="detail-item">
-                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
-                    <span>Construction</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
-                    <span>Full time</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
-                    <span>$48000-$50000</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
-                    <span>Texas, USA</span>
-                </div>
-            </div>
-            <button class="job-details-button">Job Details</button>
-        </div>
-        <div class="job-card">
-            <div class="job-card-header">
-                <span class="time-ago">24 min ago</span>
-                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
-            </div>
-
-            <div class="job-info">
-                <div class="company-logo">
-                    <img src="./assets/images/icons/district.png" alt="Company Logo">
-                </div>
-                <div>
-                    <h2>District Intranet Director</h2>
-                    <p class="company-name">VonRueden - Weber Co</p>
-                </div>
-            </div>
-
-            <div class="job-details-icons">
-                <div class="detail-item">
-                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
-                    <span>Commerce</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
-                    <span>Full time</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
-                    <span>$42000-$48000</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
-                    <span>Florida, USA</span>
-                </div>
-            </div>
-            <button class="job-details-button">Job Details</button>
-        </div>
-        <div class="job-card">
-            <div class="job-card-header">
-                <span class="time-ago">26 min ago</span>
-                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
-            </div>
-
-            <div class="job-info">
-                <div class="company-logo">
-                    <img src="./assets/images/icons/corporate.png" alt="Company Logo">
-                </div>
-                <div>
-                    <h2>Corporate Tactics Facilitator</h2>
-                    <p class="company-name">Cormier, Turner and Flatley Inc</p>
-                </div>
-            </div>
-
-            <div class="job-details-icons">
-                <div class="detail-item">
-                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
-                    <span>Commerce</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
-                    <span>Full time</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
-                    <span>$38000-$40000</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
-                    <span>Boston, USA</span>
-                </div>
-            </div>
-            <button class="job-details-button">Job Details</button>
-        </div>
-        <div class="job-card">
-            <div class="job-card-header">
-                <span class="time-ago">30 min ago</span>
-                <img src="./assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
-            </div>
-
-            <div class="job-info">
-                <div class="company-logo">
-                    <img src="./assets/images/icons/forward.png" alt="Company Logo">
-                </div>
-                <div>
-                    <h2>Forward Accounts Consultant</h2>
-                    <p class="company-name">Miller Group</p>
-                </div>
-            </div>
-
-            <div class="job-details-icons">
-                <div class="detail-item">
-                    <img src="./assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
-                    <span>Financial services</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
-                    <span>Full time</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
-                    <span>$45000-$48000</span>
-                </div>
-                <div class="detail-item">
-                    <img src="./assets/images/icons/location.png" alt="Location icon" class="detail-icon">
-                    <span>Boston, USA</span>
-                </div>
-            </div>
-            <button class="job-details-button">Job Details</button>
-        </div>
-
-
     </main>
+
     <section class="top-company">
-        <div class="top-company_container">
-            <div class="top-company-content">
-                <div class="top-company-text">
-                    <h1 class="top-company_title">Top Company</h1>
-                    <p class="top-company_subtitle">Elit velit mauris aliquam est diam. Leo sagittis consectetur diam
+        <div class="container">
+            <div class="top-company__container">
+                <div class="top-company__header">
+                    <h2 class="top-company__title">Top Company</h2>
+                    <p class="top-company__subtitle">Elit velit mauris aliquam est diam. Leo sagittis consectetur diam
                         morbi erat</p>
                 </div>
-                <div class="top-company_companies">
+                <div class="top-company__grid">
                     <div class="company-card">
-                        <div class="company-icon">
-                            <img src="./assets/images/icons/insta.png" alt="Instagram logo">
+                        <div class="company-card__icon">
+                            <img src="../assets/images/icons/insta.png" alt="Instagram logo">
                         </div>
-                        <h2 class="company-name">Instagram</h2>
-                        <p class="company-description">At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet
-                            massa leo</p>
-                        <a href="#" class="open-jobs-link">8 open jobs</a>
+                        <h3 class="company-card__name">Instagram</h3>
+                        <p class="company-card__description">At pellentesque amet odio cras imperdiet nisl. Ac magna
+                            aliquet massa leo</p>
+                        <a href="#" class="company-card__link">8 open jobs</a>
                     </div>
 
                     <div class="company-card">
-                        <div class="company-icon">
-                            <img src="./assets/images/icons/tesla.png" alt="Tesla logo">
+                        <div class="company-card__icon">
+                            <img src="../assets/images/icons/tesla.png" alt="Tesla logo">
                         </div>
-                        <h2 class="company-name">Tesla</h2>
-                        <p class="company-description">Odio aliquet tellus tellus maecenas. Faucibus in viverra
+                        <h3 class="company-card__name">Tesla</h3>
+                        <p class="company-card__description">Odio aliquet tellus tellus maecenas. Faucibus in viverra
                             venenatis phasellus</p>
-                        <a href="#" class="open-jobs-link">18 open jobs</a>
+                        <a href="#" class="company-card__link">18 open jobs</a>
                     </div>
 
                     <div class="company-card">
-                        <div class="company-icon">
-                            <img src="./assets/images/icons/mc.png" alt="McDonald's logo">
+                        <div class="company-card__icon">
+                            <img src="../assets/images/icons/mc.png" alt="McDonald's logo">
                         </div>
-                        <h2 class="company-name">McDonald's</h2>
-                        <p class="company-description">Odio aliquet tellus tellus maecenas. Faucibus in viverra
+                        <h3 class="company-card__name">McDonald's</h3>
+                        <p class="company-card__description">Odio aliquet tellus tellus maecenas. Faucibus in viverra
                             venenatis phasellus</p>
-                        <a href="#" class="open-jobs-link">12 open jobs</a>
+                        <a href="#" class="company-card__link">12 open jobs</a>
                     </div>
 
                     <div class="company-card">
-                        <div class="company-icon">
-                            <img src="./assets/images/icons/iphone.png" alt="Apple logo">
+                        <div class="company-card__icon">
+                            <img src="../assets/images/icons/iphone.png" alt="Apple logo">
                         </div>
-                        <h2 class="company-name">Apple</h2>
-                        <p class="company-description">Et odio sem tellus ultrices posuere consequat. Tristique nascetur
-                            sapien </p>
-                        <a href="#" class="open-jobs-link">9 open jobs</a>
+                        <h3 class="company-card__name">Apple</h3>
+                        <p class="company-card__description">Et odio sem tellus ultrices posuere consequat. Tristique
+                            nascetur sapien</p>
+                        <a href="#" class="company-card__link">9 open jobs</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-  <?php include '../components/footer.php'; ?>
+    <?php include '../components/footer.php'; ?>
 </body>
 
 </html>
