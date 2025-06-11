@@ -30,8 +30,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             </nav>
 
             <div class="header__actions">
-                <a href="login.php" class="header__login">Login</a>
-                <a href="register.php" class="header__register">Register</a>
+                <a href="/vacancy-web/pages/auth.php" class="header__register">Sign In</a>
             </div>
 
             <div class="header__burger">
@@ -56,8 +55,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             </nav>
 
             <div class="header__mobile-actions">
-                <a href="login.php" class="header__mobile-login">Login</a>
-                <a href="register.php" class="header__mobile-register">Register</a>
+                <a href="register.php" class="header__mobile-register">Sign In</a>
             </div>
         </div>
     </header>
