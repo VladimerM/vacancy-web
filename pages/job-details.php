@@ -1,23 +1,19 @@
 <?php
-include_once '../config/database.php';
-include_once '../classes/job.php';
+require_once '../includes/init.php';
 
-$job_id=isset($_GET['id'])?(int)$_GET['id']:0;
-if($job_id <=0){
+$job_id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
+if ($job_id <= 0) {
     header('Location: jobs.php');
     exit();
 }
 
-$database=new Database();
-$db =$database->getConnection();
-$job = new Job($db);
-
-$job_data =$job->getJobById($job_id);
-if(!$job_data){
+$job_data = $job->getJobById($job_id);
+if (!$job_data) {
     echo "Job not found";
     exit();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,64 +35,68 @@ if(!$job_data){
             <div class="job-card">
                 <div class="job-card-header">
                     <span class="time-ago">
-                        <?php 
-                        $time_diff = time()-strtotime($job_data['created_at']);
-                        if($time_diff<3600) {
-                            echo floor($time_diff/60) . 'min ago';
-                        } elseif ($time_diff<86400){
-                            echo floor($time_diff/3600) . 'hours ago';
+                        <?php
+                        $time_diff = time() - strtotime($job_data['created_at']);
+                        if ($time_diff < 3600) {
+                            echo floor($time_diff / 60) . 'min ago';
+                        } elseif ($time_diff < 86400) {
+                            echo floor($time_diff / 3600) . 'hours ago';
                         } else {
                             echo floor($time_diff / 86400) . 'days ago';
                         } ?>
-                    </span> 
+                    </span>
                     <img src="../assets/images/icons/Icon.png" alt="Bookmark icon" class="bookmark-icon">
                 </div>
 
                 <div class="job-info">
                     <div class="company-logo">
-                    <?php if (!empty($job_data['company_logo'])): ?>
-                        <img src="<?php echo htmlspecialchars($job_data['company_logo']);?>"alt="Company Logo">
-                        <?php else:?>
-                         <img src="../assets/images/icons/corporate.png" alt="Company Logo">
-                        <?php endif;?>
+                        <?php if (!empty($job_data['company_logo'])): ?>
+                            <img src="<?php echo htmlspecialchars($job_data['company_logo']); ?>" alt="Company Logo">
+                        <?php else: ?>
+                            <img src="../assets/images/icons/corporate.png" alt="Company Logo">
+                        <?php endif; ?>
                     </div>
 
                     <div>
-                        <h2><?php echo htmlspecialchars($job_data['job_title']);?></h2>
-                        <p class="company-name"><?php echo htmlspecialchars($job_data['company_name']);?></p>
+                        <h2><?php echo htmlspecialchars($job_data['job_title']); ?></h2>
+                        <p class="company-name"><?php echo htmlspecialchars($job_data['company_name']); ?></p>
                     </div>
+                </div>
+                <div class="job-card__footer">
+                    <div class="job-details-icons">
+                        <div class="detail-item">
+                            <img src="../assets/images/icons/briefcase.png" alt="Hotels & Tourism icon"
+                                class="detail-icon">
+                            <span><?php echo htmlspecialchars($job_data['category']); ?></span>
+                        </div>
+                        <div class="detail-item">
+                            <img src="../assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
+                            <span><?php echo htmlspecialchars($job_data['job_type']); ?>
+                            </span>
+                        </div>
+                        <div class="detail-item">
+                            <img src="../assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
+                            <span>
+                                <?php
+                                if ($job_data['salary_min'] && $job_data['salary_max']) {
+                                    echo '$' . number_format($job_data['salary_min']) . '-$' . number_format($job_data['salary_max']);
+                                } elseif ($job_data['salary_min']) {
+                                    echo 'from $' . number_format($job_data['salary_min']);
+                                } else {
+                                    echo 'by agreement';
+                                }
+                                ?>
+                            </span>
+                        </div>
+                        <div class="detail-item">
+                            <img src="../assets/images/icons/location.png" alt="Location icon" class="detail-icon">
+                            <span><?php echo htmlspecialchars($job_data['location']); ?></span>
+                        </div>
+                    </div>
+                    <button class="job-details-button">Apply Job</button>
                 </div>
 
-                <div class="job-details-icons">
-                    <div class="detail-item">
-                        <img src="../assets/images/icons/briefcase.png" alt="Hotels & Tourism icon" class="detail-icon">
-                        <span><?php echo htmlspecialchars($job_data['category']);?></span>
-                    </div>
-                    <div class="detail-item">
-                        <img src="../assets/images/icons/clock.png" alt="Full time icon" class="detail-icon">
-                        <span><?php echo htmlspecialchars($job_data['job_type']);?>
-                    </span>
-                    </div>
-                    <div class="detail-item">
-                        <img src="../assets/images/icons/wallet.png" alt="Salary icon" class="detail-icon">
-                        <span>
-                            <?php 
-                            if($job_data['salary_min']&& $job_data['salary_max']){
-                                echo '$'. number_format($job_data['salary_min']) . '-$' . number_format($job_data['salary_max']);
-                             } elseif ($job_data['salary_min']){
-                                echo 'from $' . number_format($job_data['salary_min']);
-                             }else {
-                                echo 'by agreement';
-                             }
-                             ?>
-                        </span>
-                    </div>
-                    <div class="detail-item">
-                        <img src="../assets/images/icons/location.png" alt="Location icon" class="detail-icon">
-                        <span><?php echo htmlspecialchars($job_data['location']);?></span>
-                    </div>
-                </div>
-                <button class="job-details-button">Apply Job</button>
+
             </div>
             <div class="job-details_hero">
                 <div class="job-details_content">
