@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 
-body {
+.job-details-page {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
@@ -228,7 +228,10 @@ body {
 
 .job-details_overview {
     border-radius: 10px;
+    width: 306px;
+    max-height: 800px;
     padding: 30px;
+    margin-top: 60px;
     background-color: #EBF5F4;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }

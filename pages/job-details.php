@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="job-details.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>Document</title>
 </head>
 
-<body>
+<body class="job-details-page">
      <?php include '../components/header.php'; ?>
     <header class="job-details-header">
         <h1 class="job-details-header_title">Job Details</h1>
@@ -45,7 +45,7 @@
                     <span>$40000-$42000</span>
                 </div>
                 <div class="detail-item">
-                    <img src="svg/location.png" alt="Location icon" class="detail-icon">
+                    <img src="../assets/images/icons/location.png" alt="Location icon" class="detail-icon">
                     <span>New-York, USA</span>
                 </div>
             </div>
@@ -54,7 +54,7 @@
         <div class="job-details_hero">
             <div class="job-details_content">
                 <div class="job-details_description">
-                    <h2>Key Responsibilities</h2>
+                    <h2>Job Description</h2>
                     <div class="job-details_description-text">
                         Nunc sed a nisl purus. Nibh dis faucibus proin lacus tristique. Sit congue non vitae odio sit
                         erat

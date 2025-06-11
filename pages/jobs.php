@@ -55,7 +55,9 @@
                             <span>New-York, USA</span>
                         </div>
                     </div>
-                    <button class="job-card__button">Job Details</button>
+                    <button class="job-card__button">
+                    <a href="job-details.php">  Job Details</a>    
+                  </button>
                 </div>
             </div>
 
