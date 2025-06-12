@@ -1,3 +1,65 @@
+<?php 
+require_once __DIR__ . '/../includes/init.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
+    $full_name = trim($_POST['full_name']);
+    $email = trim($_POST['email']);
+    $password = $_POST['password'];
+    $confirm_password = $_POST['confirm_password'];
+    $terms_accepted = isset($_POST['terms_accepted']) ? 1 : 0;
+    $job_alerts = isset($_POST['job_alerts']) ? 1 : 0;
+
+    if (empty($full_name) || empty($email) || empty($password)) {
+        $register_error = "All fields are required ";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $register_error = "Invalid email format";
+    } elseif (strlen($password) < 8) {
+        $register_error = "Password must be at least 8 characters long.";
+    } elseif ($password !== $confirm_password) {
+        $register_error = "Passwords do not match";
+    } elseif ($terms_accepted == 0) {
+        $register_error = "You must agree to the terms.";
+    } else {
+        $data = [
+            'full_name' => $full_name,
+            'email' => $email,
+            'password' => $password,
+            'terms_accepted' => $terms_accepted,
+            'job_alerts' => $job_alerts
+        ];
+        if ($user->createUser($data)) {
+            $register_error = "Registration successful! You can now log in.";
+        }
+    }
+}
+
+
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
+    $email = trim($_POST['email']);
+    $password = $_POST['password'];
+    
+    if (empty($email) || empty($password)) {
+        $login_error ="All fields are required.";
+    } else {
+        $user_data = $user->getUserByEmail($email);
+        
+        if ($user_data && $user->verifyPassword($password, $user_data['password'])) {
+         
+            $_SESSION['user_id'] = $user_data['id'];
+            $_SESSION['user_name'] = $user_data['full_name'];
+            $_SESSION['user_email'] = $user_data['email'];
+            
+            header("Location: ../index.php");//harc?
+            exit();
+        } else {
+            $login_error = "Invalid email or password.";
+        }
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,30 +82,35 @@
         <h1 class="auth-card__title">Welcome Back</h1>
         <p class="auth-card__subtitle">Sign in to your account to continue your job search</p>
       </div>
-
-      <form class="auth-form" onsubmit="handleLogin(event)">
+     <?php if(isset($error)): ?>
+         <div class="error-message"><?php echo $error; ?></div>
+      <?php endif; ?>
+     <?php if(isset($success)): ?>
+         <div class="success-message"><?php echo $success; ?></div>
+      <?php endif; ?>
+      <form method="POST" class="auth-form" action="">
         <div class="form-group">
           <label class="form-label" for="loginEmail">Email Address</label>
-          <input type="email" id="loginEmail" class="form-input" placeholder="Enter your email" required>
+          <input type="email" name="email" id="loginEmail" class="form-input" placeholder="Enter your email" required>
         </div>
 
         <div class="form-group">
           <label class="form-label" for="loginPassword">Password</label>
-          <input type="password" id="loginPassword" class="form-input" placeholder="Enter your password" required>
+          <input type="password" name="password" id="loginPassword" class="form-input" placeholder="Enter your password" required>
           <div class="forgot-password">
             <a href="#" class="forgot-password__link">Forgot Password?</a>
           </div>
         </div>
 
         <div class="form-checkbox-group">
-          <input type="checkbox" id="rememberMe" class="form-checkbox">
+          <input type="checkbox" name="terms_accepted" id="rememberMe" class="form-checkbox">
           <label for="rememberMe" class="form-checkbox-label">
             Remember me for 30 days
           </label>
         </div>
 
         <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Sign In</button>
+          <button type="submit" name="login" class="btn btn-primary">Sign In</button>
         </div>
       </form>
 
@@ -85,30 +152,30 @@
         <p class="auth-card__subtitle">Join our community and find your dream job today</p>
       </div>
 
-      <form class="auth-form" onsubmit="handleRegister(event)">
+      <form  method="POST" class="auth-form" action="">
         <div class="form-group">
           <label class="form-label" for="registerName">Full Name</label>
-          <input type="text" id="registerName" class="form-input" placeholder="Enter your full name" required>
+          <input type="text" name="full_name"  id="registerName" class="form-input" placeholder="Enter your full name" required>
         </div>
 
         <div class="form-group">
           <label class="form-label" for="registerEmail">Email Address</label>
-          <input type="email" id="registerEmail" class="form-input" placeholder="Enter your email" required>
+          <input type="email"  name="email"  id="registerEmail" class="form-input" placeholder="Enter your email" required>
         </div>
 
         <div class="form-group">
           <label class="form-label" for="registerPassword">Password</label>
-          <input type="password" id="registerPassword" class="form-input" placeholder="Create a strong password"
+          <input type="password" name="password"  id="registerPassword" class="form-input" placeholder="Create a strong password"
             required minlength="8">
         </div>
 
         <div class="form-group">
-          <label class="form-label" for="confirmPassword">Confirm Password</label>
+          <label class="form-label"   name="confirm_password" for="confirmPassword">Confirm Password</label>
           <input type="password" id="confirmPassword" class="form-input" placeholder="Confirm your password" required>
         </div>
 
         <div class="form-checkbox-group">
-          <input type="checkbox" id="agreeTerms" class="form-checkbox" required>
+          <input type="checkbox" name="terms_accepted" id="agreeTerms" value="1" class="form-checkbox" required>
           <label for="agreeTerms" class="form-checkbox-label">
             I agree to the <a href="#" style="color: #309689;">Terms of Service</a> and <a href="#"
               style="color: #309689;">Privacy Policy</a>
@@ -116,14 +183,14 @@
         </div>
 
         <div class="form-checkbox-group">
-          <input type="checkbox" id="newsletter" class="form-checkbox">
+          <input type="checkbox" name="job_alerts" id="newsletter" class="form-checkbox">
           <label for="newsletter" class="form-checkbox-label">
             Send me job alerts and career updates
           </label>
         </div>
 
         <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Create Account</button>
+          <button type="submit" name="register"  class="btn btn-primary">Create Account</button>
         </div>
       </form>
 
