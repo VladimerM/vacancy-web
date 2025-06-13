@@ -19,11 +19,9 @@ class User {
         $stmt = $this->conn->prepare($query);
         
        
-        $hashed_password = password_hash($data['password'], PASSWORD_DEFAULT);
-        
         $stmt->bindParam(':full_name', $data['full_name']);
         $stmt->bindParam(':email', $data['email']);
-        $stmt->bindParam(':password', $hashed_password);
+        $stmt->bindParam(':password', $data['password']);
         $stmt->bindParam(':terms_accepted', $data['terms_accepted'], PDO::PARAM_BOOL);
         $stmt->bindParam(':job_alerts', $data['job_alerts'], PDO::PARAM_BOOL);
         

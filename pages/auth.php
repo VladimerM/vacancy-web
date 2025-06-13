@@ -82,12 +82,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
         <h1 class="auth-card__title">Welcome Back</h1>
         <p class="auth-card__subtitle">Sign in to your account to continue your job search</p>
       </div>
-     <?php if(isset($error)): ?>
-         <div class="error-message"><?php echo $error; ?></div>
-      <?php endif; ?>
-     <?php if(isset($success)): ?>
-         <div class="success-message"><?php echo $success; ?></div>
-      <?php endif; ?>
+      <!--  
+      <?php if(isset($error)): ?>
+          <div class="error-message"><?php echo $error; ?></div>
+        <?php endif; ?>
+      <?php if(isset($success)): ?>
+          <div class="success-message"><?php echo $success; ?></div>
+        <?php endif; ?>
+      -->
       <form method="POST" class="auth-form" action="">
         <div class="form-group">
           <label class="form-label" for="loginEmail">Email Address</label>
@@ -170,8 +172,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
         </div>
 
         <div class="form-group">
-          <label class="form-label"   name="confirm_password" for="confirmPassword">Confirm Password</label>
-          <input type="password" id="confirmPassword" class="form-input" placeholder="Confirm your password" required>
+          <label class="form-label" for="confirmPassword">Confirm Password</label>
+          <input type="password" name="confirm_password" id="confirmPassword" class="form-input" placeholder="Confirm your password" required>
         </div>
 
         <div class="form-checkbox-group">
@@ -241,51 +243,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
       document.getElementById('registerCard').classList.add('hidden');
       document.getElementById('loginCard').classList.remove('hidden');
       document.title = 'Login - Job Portal';
-    }
-
-    function handleLogin(event) {
-      event.preventDefault();
-      const email = document.getElementById('loginEmail').value;
-      const password = document.getElementById('loginPassword').value;
-      const rememberMe = document.getElementById('rememberMe').checked;
-
-      // Here you would typically send the data to your server
-      console.log('Login attempt:', { email, password, rememberMe });
-
-      // Simulate login success
-      alert('Login successful! Redirecting to dashboard...');
-      // In a real app, you would redirect to the dashboard
-      // window.location.href = 'dashboard.php';
-    }
-
-    function handleRegister(event) {
-      event.preventDefault();
-      const name = document.getElementById('registerName').value;
-      const email = document.getElementById('registerEmail').value;
-      const password = document.getElementById('registerPassword').value;
-      const confirmPassword = document.getElementById('confirmPassword').value;
-      const agreeTerms = document.getElementById('agreeTerms').checked;
-      const newsletter = document.getElementById('newsletter').checked;
-
-      // Validate password confirmation
-      if (password !== confirmPassword) {
-        alert('Passwords do not match!');
-        return;
-      }
-
-      // Here you would typically send the data to your server
-      console.log('Register attempt:', { name, email, password, agreeTerms, newsletter });
-
-      // Simulate registration success
-      alert('Registration successful! Please check your email to verify your account.');
-      // In a real app, you might redirect to login or verification page
-      showLogin();
-    }
-
-    function socialLogin(provider) {
-      // Here you would typically integrate with social login APIs
-      console.log(`${provider} login initiated`);
-      alert(`${provider} login will be implemented with actual OAuth integration.`);
     }
 
     // Add password strength validation
