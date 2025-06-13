@@ -4,8 +4,8 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 require_once __DIR__ . '/../config/database.php';
-require_once __DIR__ . '/../classes/Job.php';
-require_once __DIR__ . '/../classes/User.php';
+require_once __DIR__ . '/../classes/job.php';
+require_once __DIR__ . '/../classes/user.php';
 
 
 $database = new Database();

@@ -9,6 +9,7 @@ class User {
     
     public function createUser($data) {
         if ($this->emailExists($data['email'])) {
+            echo "This email is already registered.<br>";
             return false;
         }
         

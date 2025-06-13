@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
         $data = [
             'full_name' => $full_name,
             'email' => $email,
-            'password' => $password,
+            'password' => password_hash($password, PASSWORD_DEFAULT),
             'terms_accepted' => $terms_accepted,
             'job_alerts' => $job_alerts
         ];
